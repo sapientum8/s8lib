@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script type="module" src="/styles/tailwind.css"></script>
+<style>
+@font-face {
+	font-family: "Overpass";
+	src: url("/fonts/Overpass.ttf");
+}
+@font-face {
+	font-family: "Fira Mono";
+	src: url("/fonts/FiraMono.ttf");
+}
+:root {
+  --text-color: green;
+  --text-font: "Overpass"
+}
+.overpass {
+    font-family: var(--text-font), ui-sans-serif;
+	color: var(--text-color);
+}
+.fira {
+	font-family: 'Fira Mono', sans-serif;
+}
+#menu {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+</style>
+<script>
+//loadMenu = () => document.getElementById("menu").innerHTML = "The menu";
+loadMenu = () => fetch('/root/menu.txt')
+  .then(response => response.text())
+  .then((data) => {
+	document.getElementById("menu").innerHTML = data;
+  })
+</script>
+	<title>Test page</title>
+</head>
+<body onload="loadMenu()">
+<div id="menu"></div>
+<div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-red-300 py-6 sm:py-12">
+<h1>Hello world</h1>
+<p style="color:black;">A black paragraph.</p>
+<p class="overpass">Оверпасс!</p>
+<p class="fira">Фира моно</p>
+</div>
+</body>
+</html>
