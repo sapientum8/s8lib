@@ -185,4 +185,4 @@ cython_debug/
 build
 
 web/package-lock.json
-node_modules
+node_modules/
