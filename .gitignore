@@ -184,5 +184,5 @@ cython_debug/
 # Ignore Gradle build output directory
 build
 
-package-lock.json
+web/package-lock.json
 node_modules
