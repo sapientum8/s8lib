@@ -3,5 +3,5 @@
  */
 
 plugins {
-    id("buildlogic.website-conventions")
+    id("buildlogic.web-conventions")
 }

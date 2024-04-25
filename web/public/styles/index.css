@@ -1,0 +1,36 @@
+
+@font-face {
+    font-family: "Overpass";
+    src: url("/fonts/Overpass.ttf");
+}
+
+@font-face {
+    font-family: "Fira Mono";
+    src: url("/fonts/FiraMono.ttf");
+}
+
+:root {
+    --bg-color: black;
+    --text-color: black;
+    --text-font: Overpass;
+    --menu-color: white;
+    --menu-bgcolor: cadetblue;
+    --menu-hcolor: darkgreen;
+}
+
+.lite {
+    --bg-color: white;
+    --text-color: black;
+    --text-font: Overpass;
+    --menu-color: white;
+    --menu-bgcolor: cadetblue;
+    --menu-hcolor: darkgreen;
+}
+.dark {
+    --bg-color: black;
+    --text-color: white;
+    --text-font: Overpass;
+    --menu-color: white;
+    --menu-bgcolor: cadetblue;
+    --menu-hcolor: darkgreen;
+}
