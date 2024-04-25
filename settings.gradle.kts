@@ -11,4 +11,4 @@ plugins {
 }
 
 rootProject.name = "s8lib"
-include("app", "list", "utils", "web")
+include("lambda", "web", "utils")

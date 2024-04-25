@@ -1,3 +1,21 @@
+*.class
+.gradle
+/build/
+/bin/
+/.settings/
+.project
+.classpath
+
+# Package Files
+*.jar
+*.war
+*.ear
+
+# Serverless directories
+.serverless
+
+!/gradle/wrapper/gradle-wrapper.jar
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
